@@ -1,0 +1,644 @@
+* {
+  margin: 0;
+
+  font-family: sans-serif;
+}
+a{
+  text-decoration: none;
+}
+/* ------------------
+._____scrollbar______
+ -------------------*/
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #042c6d, #e46dab);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(270deg, #9e4673, #3d4a59, #9e4673);
+}
+
+/* 
+---scrollbar for Firefox
+ */
+html {
+  scrollbar-color: #9e4673 #3d4a59;
+}  
+
+
+/* 
+-----HEADER
+*/
+header {
+ 
+  height: 66px;
+  color: white;
+  /* border-radius: 0 0 70px 70px; */
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+.header-container {
+  display: flex;
+}
+.das-logo {
+  background: none;
+  font-size: 30px;
+  background: none;
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.dark header {
+  background-color: rgba(255, 131, 131, 0.08);
+  border-bottom: 1px solid rgba(250, 235, 215, 0.35);
+  background-image: linear-gradient(
+    43deg,
+    #4158d096 0%,
+    #c850c080 46%,
+    #ffcc7080 100%
+  );
+  height: 66px;
+  border-radius: unset;
+}
+.dark header h1 {
+  background-color: rgb(16, 73, 243);
+  text-decoration: underline;
+  background-color: transparent;
+  /* width: 229px; */
+  font-family: fantasy;
+  text-decoration-color: floralwhite;
+  text-decoration-style: double;
+  text-shadow: aliceblue;
+  text-shadow: -1px 1px 13px #ff4242;
+}
+
+.dark {
+  background-color: #020405d6;
+  color: #fff;
+}
+
+.dark main h1 {
+  background-color: #9e46749e;
+ background:  linear-gradient(90deg, rgb(228 138 183 / 56%) 0%, rgb(236 240 81 / 52%) 100%);
+ color: #000;
+}
+
+main h1 {
+  text-align: center;
+  /* padding: 10px 0; */
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -59px;
+  margin-bottom: 51px;
+  /* margin-top: -43px; */
+  color: #ffffffc4;
+
+  width: 100%;
+  /* background-color: #e48ab7; */
+  background: rgba(56, 155, 231, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(0.4px);
+  -webkit-backdrop-filter: blur(0.4px);
+  border: 1px solid rgba(56, 155, 231, 0.3);
+
+  /* background-color: #e48ab7; */
+  /* background: rgb(228,138,183);
+  background: linear-gradient(90deg, rgb(16 16 16) 0%, rgb(255 0 0) 100%);
+  font-weight: 100;
+  box-shadow: 17px 8px 2px rebeccapurple; */
+  /* From https://css.glass */
+/* From https://css.glass */
+
+
+}
+.resume-title{
+  font-weight: 600;
+  font-family: monospace;
+}
+
+
+header h1 {
+  margin-bottom: 23px;
+  text-decoration: underline;
+  background-color: transparent;
+  color: #fff;
+
+  font-family: fantasy;
+  text-decoration-color: floralwhite;
+  text-decoration-style: double;
+  text-shadow: aliceblue;
+  text-shadow: -1px 1px 13px #000000b5;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+
+  padding-left: 1px;
+}
+
+.parent li a {
+  padding: 0 5px;
+  color: #fff;
+  text-decoration: none;
+
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.parent li a:hover {
+  border-bottom: 2px solid red;
+  font-size: 20px;
+}
+
+.mode {
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid #dddddd4f;
+  cursor: pointer;
+  color: #e2e2ff;
+}
+
+.dark .mode {
+  box-shadow: 0 0 10px #9e4673;
+  background: #9e4673;
+}
+
+.mode:hover {
+  box-shadow: 0 0 10px #9e4673, 0 0 40px #9e4673, 0 0 80px #9e4673;
+  background: #9e4673;
+  border: none;
+}
+
+li {
+  list-style-type: none;
+  font-size: 18px;
+}
+@media screen and (max-width: 390px) {
+  li {
+
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  }
+/* 
+------------
+*/
+section {
+  margin-bottom: 100px;
+  box-shadow: 5px 5px 25px rgb(179, 172, 172);
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 13px;
+
+  padding: 45px 0;
+
+  transition: all 0.4s;
+}
+
+.dark section {
+  box-shadow: 5px 5px 25px rgb(124, 97, 97);
+}
+
+.left-section,
+.right-section {
+  width: 49%;
+
+  text-align: center;
+  margin-top: 60px;
+}
+.profile-container{
+  display: flex;
+  justify-content: center;
+  
+}
+.seperator{
+  border-left: 6px solid green;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+
+
+
+
+}
+
+.left-section h3 {
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+.left-section p {
+  font-size: 20px;
+  margin: 25px 0;
+}
+
+.codepen,
+.github {
+  background-color: royalblue;
+  color: #fff;
+  margin: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+@media screen and (max-width: 802px) {
+  .codepen,
+  .github {
+    margin: 10px;
+    padding: 11px 40px;
+    display: block;
+  }
+  }
+
+.github {
+  background-color: rgb(31, 27, 27);
+}
+
+.my-img {
+  border-radius: 50%;
+  width: 150px;
+
+  border-right: 2px solid #ff8a00;
+  border-left: 2px solid #ff8a00;
+  border-bottom: 2px solid #e52e71;
+  border-top: 2px solid #e52e71;
+}
+
+article h5 {
+  font-size: 39px;
+  font-weight: 500;
+  font-family: "Sacramento", cursive;
+  margin-top: 10px;
+}
+
+.par {
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  text-align: center;
+}
+
+.design {
+  background-color: #070606;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  /* border-top-left-radius: 35px;
+  border-top-right-radius: 35px; */
+  margin-bottom: 0;
+}
+.follow span{
+font-size: 25px;
+text-align: center;
+}
+.follow span:hover{
+  font-size: 28px;
+ color: #74a0f8 !important;
+ cursor: pointer;
+}
+
+
+.dark .design {
+  background-color: rgb(0 0 0 / 39%);
+  /* background-color: rgba(255, 131, 131, 0.08); */
+}
+/*---------
+styles for div (icons/social media)
+--------- */
+
+.follow {
+  padding: 5px 250px;
+  box-shadow:0 10px 22px 0 #7832cd61;
+  text-align: center;
+
+  display: flex;
+  opacity: 0.9;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: black;
+  align-items: center;
+  color: yellowgreen;
+  justify-content: space-evenly;
+}
+@media (max-width: 710px) {
+  .follow {
+    padding: 5px 95px;
+
+  }
+}
+@media (max-width: 410px) {
+  .follow {
+   
+    padding: 5px 35px;
+  }
+}
+/*---------
+style icons/social media
+--------- */
+.icon-facebook2:before {
+  content: "\ea91";
+  color: #4267b2;
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+  color: #f73760db;
+}
+.icon-twitter1:before {
+  content: "\ea96";
+  color: #1DA1F2;
+}
+
+.follow a {
+  all: unset;
+}
+
+.dark .follow {
+  
+
+  box-shadow: 0 7px 93px 0 rgb(255 131 131 / 47%);
+  background-color: rgba(255, 131, 131, 0.08);
+}
+
+.follow a {
+  border: 1px solid #3d4a59;
+  border-radius: 4px;
+  padding: 4px 10px 1px;
+  text-decoration: none;
+}
+
+.dark .follow a {
+  box-shadow: 0 0 10px #9e4673, 0 0 10px #9e4673, 0 0 0px #9e4673;
+
+  color: #fff;
+}
+
+.follow a:hover {
+
+  background-color: rgba(19, 27, 23, 0.61);
+  color: #fff;
+}
+
+.dark .follow a:hover {
+  background-color: #2d111693;
+}
+
+.mycard {
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 50px;
+
+  border-radius: 5px;
+}
+
+.container {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 60%;
+  text-align: center;
+  padding: 20px 0;
+}
+.container p {
+  font-size: 20px;
+}
+
+.active {
+  display: block !important;
+}
+
+.bigger-contaier {
+  background-color: rgb(221, 185, 185);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+
+.dark .card-body {
+  color: #000;
+}
+
+.flex-pro {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dark .please {
+  color: #000;
+}
+
+
+
+/* ===============
+   validation form snipest fropw w3s
+================ */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.form-container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 21px 0 8px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* =====
+our codes
+=======*/
+
+.parent-of-form {
+  /* warninggggggggggggggggggggggggg */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 10;
+}
+
+form {
+  background-color: #fff;
+  padding-top: 16px;
+  border-radius: 5px;
+  width: 35%;
+  transform: scale(0);
+  transition: all 0.6s;
+}
+
+@media (max-width: 1000px) {
+  form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  form {
+    width: 80%;
+  }
+}
+
+#close {
+  position: absolute;
+  top: -9px;
+  right: 11px;
+
+  font-size: 22px;
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+
+#close:hover {
+  transform: rotate(180deg);
+
+  font-size: 24px;
+  opacity: 1;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.papa {
+  margin-top: 22px;
+
+  position: relative;
+}
+
+.icon-check-circle {
+  color: #04aa6d;
+  font-size: 20px;
+  position: absolute;
+  top: 37px;
+  right: 16px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.papa P {
+  font-size: 14px;
+  color: red;
+
+  display: none;
+}
+
+/* ===============
+validation form check input statyus
+================ */
+
+.error {
+  border: 2px solid red !important;
+}
+
+.success {
+  border: 2px solid #04aa6d !important;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+
+/* =================================
+  
+==================================== */

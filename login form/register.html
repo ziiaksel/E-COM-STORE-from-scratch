@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <!-- <link rel="stylesheet" href="icon-moon-login/style.css"> -->
+    <link rel="stylesheet" href="login.css"/>
+    <script defer src="login.js"></script>
+
+    <link rel="stylesheet" href="/store-index.css">
+    <link rel="stylesheet" href="/icomoon (2)/style.css ">
+    <link rel="stylesheet" href="/style.css">
+
+
+       <!-- 
+        nav-------------------------------
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/menu.css">
+  <link rel="stylesheet" href="/icomoon/style.css">
+  <link rel="stylesheet" href="/icon-moon-login/style.css">
+  <link rel="stylesheet" href="/checkmark-icon/style.css">
+
+  
+</head>
+<body id="body">
+  <!-- 
+    navbar------------------------------
+   -->
+   <header id="header" class="myheader">
+    <h1 class="das-logo">DAS</h1> 
+    
+     
+            <div class="nav-cont">
+              <input type="checkbox" id="active">
+              <label for="active" class="menu-btn"><span class="icon-menu3"></span></label>
+              <div class="wrapper">
+                     <ul class="parent">
+                      <li> <a href="/store-index.html">
+                        Home 
+                        </a></li>
+                       <li><a href="#">Trend</a></li>
+                       <li><a href="#">Winter</a></li>
+                       <li><a href="#">Summer</a></li>
+                       <!-- <li><a href="#">Blog</a></li> -->
+                       <li><a href="#" class="register-btn" id="creat-btn"><span class="icon-user-o"></span></a></li>
+                      </ul>
+               </div>
+              </div>                   
+             
+    
+      
+  </header>
+  
+<!-- 
+-------------
+REGISTER FORM--------------------------
+-------------
+ -->
+
+<div id="register-from-big-container">
+
+
+  <!-- <li><a href="#" class.="register-btn" id="register-btn">Register</a></li> -->
+
+
+
+<div id="parent-form" class="parent-form">
+
+    <form action="action_page.php">
+      <div style="position: relative;" class="form-container">
+       
+
+          <h2 style="text-align: center;">Create Account</h2>
+          <!-- <div id="close-form"> &#10006;  </div> -->
+ 
+      
+    
+<!-- username -->
+    <div class="input-parent">
+          <label for="username"><b>Username</b></label>
+          <input id="username" type="text" placeholder="Enter Username" name="email" minlength="3" maxlength=""  required autocomplete="username">
+          <div class="icon-check">    </div>
+          <p id="usermessage"> at least 3 character </p>
+   
+        </div>
+
+
+<!-- email -->
+  <div class="input-parent">
+        <label for="email"><b>Email</b></label>
+        <input id="email" type="email" placeholder="Enter Email" name="email" autocomplete="email"  required>
+        <div class="icon-check">    </div>
+        <p id="emailmessage">Please enter a correct email address</p>
+      </div>
+
+<!-- pass -->
+      <div class="input-parent">
+        <label for="psw"><b>Password</b></label>
+        <input id="psw" type="password" placeholder="Enter Password" name="psw" minlength="8"   required>
+        <div class="icon-check">    </div>
+        <p id="pswmessage">Password must be at least 8 characters with 1 upper case letter and 1 number.</p>
+      </div>
+
+
+<!-- repeat pass -->
+      <div class="input-parent">
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input id="pswrepeat" type="password" placeholder="Repeat Password" name="psw-repeat"  required>
+        <div class="icon-check">    </div>
+        <p id="repeatmessage">Please make sure your passwords match</p>
+      </div>
+    <!-- register button -->
+          <button disabled="disabled" id="regbtn"  type="submit" class="registerbtn">Register</button>
+      </div>
+    </form>
+</div>
+</div> 
+
+
+    <!-- footer --------------------------------------------------------------->
+    <footer>
+      <div class="follow">
+          Follow Us On  
+        <a href="https://www.facebook.com/NEWDASS1990">  <span class="icon-facebook2"></span> </a>
+        <a href="https://www.instagram.com/accounts/login/?next=%2Fnewdass_%2F&source=omni_redirect"><span class="icon-instagram"></span></a> 
+        <a href="https://twitter.com/BADASS52949081"><span class="icon-twitter1"></span></a> 
+      </div>
+  
+      <p class="design">Designed and developed by Aksel Amazigh © 2022</p>
+    </footer>
+
+</body>
+</html>

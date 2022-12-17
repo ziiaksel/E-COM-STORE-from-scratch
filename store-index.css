@@ -1,0 +1,174 @@
+body {
+  min-height: 100vh !important;
+  background-color: currentColor;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*  
+---------------------------
+*/
+
+header {
+  background: rgb(0 0 0) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+  border: 1px solid rgba(219, 197, 71, 0.3) !important;
+}
+
+.page {
+  display: flex;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+  width: inherit;
+  min-height: 800px;
+  background-color: #6e6464eb;
+  background-image: url(/img/pexels-melvin-buezo-2529148.jpg);
+  background-position: 50% 50%;
+  background-blend-mode: multiply;
+  position: static;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  .page {
+    background-size: cover;
+  }
+}
+@media (max-width: 376px) {
+  body {
+    width: fit-content;
+  }
+  .page {
+    width: initial;
+  }
+  footer {
+    width: fit-content;
+  }
+}
+/*---- this is text to animate 
+check what to use css or js 
+animate this text
+changing background position first paramaters
+from 50 to 60 u
+
+
+------*/
+.text span {
+  font-family: "Lato", sans-serif;
+  font-size: 148px;
+  line-height: 1;
+  background: url(img/colorful\ -trim\ \(1\).gif);
+  background-position: 46% 2%;
+  color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+}
+@media (max-width: 660px) {
+  .text span {
+    font-size: 125px;
+  }
+}
+@media (max-width: 460px) {
+  .text span {
+    font-size: 100px;
+  }
+}
+@media (max-width: 560px) {
+  .text span {
+    font-size: 90px;
+  }
+}
+
+/* 
+
+*/
+.design {
+  background-color: #070606 !important;
+  margin-bottom: -40px !important;
+}
+footer {
+  all: unset;
+}
+.follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+call to action button
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+
+.call-to-action {
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #ff0101;
+  padding: 10px 30px;
+  border: 2px solid #06090d29;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  font-weight: 800;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  width: 300px;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  bottom: 122px;
+}
+button {
+  all: unset;
+}
+.call-to-action button {
+  font-size: larger;
+  text-align: center;
+}
+
+.call-to-action:hover {
+  background-color: #0d0d0b91;
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(4px);
+  width: 350px;
+  font-size: 15px;
+}
+/* 
+
+
+*/
+@media (min-width: 810px) {
+  .parent li a {
+
+
+    margin: 18px 42px !important;
+  }
+}
+/* @media (max-width: 810px) {
+  .parent {
+
+    padding: 12px 8px;
+    margin: 1px 86px;
+}
+} */
